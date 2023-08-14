@@ -1,0 +1,14 @@
+/*-----------------------------------------------------------------------
+- Generals
+-----------------------------------------------------------------------*/
+
+body {
+    background-color: $bg-color;
+    font-family: "Inconsolata", monospace;
+}
+main {
+    max-width: $max-width;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
