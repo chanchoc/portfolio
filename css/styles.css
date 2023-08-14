@@ -14,7 +14,7 @@
 -----------------------------------------------------------------------*/
 body {
   background-color: rgb(15, 23, 42);
-  font-family: "Inconsolata", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 main {
@@ -24,6 +24,15 @@ main {
   margin: 0 auto;
 }
 
+.page-sections, .about, .home-banner {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
 /*-----------------------------------------------------------------------
 - Navbar
 -----------------------------------------------------------------------*/
@@ -31,6 +40,9 @@ header {
   position: fixed;
   width: 100%;
   height: 90px;
+  background-color: #4d5975;
+  box-shadow: 0 1px 4px -1px #e4ece4;
+  z-index: 99;
 }
 header .navbar {
   max-width: 1400px;
@@ -41,8 +53,7 @@ header .navbar {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(15, 23, 42);
-  z-index: 99;
+  background-color: #4d5975;
 }
 header .navbar ul {
   display: flex;
@@ -62,7 +73,7 @@ header .navbar ul {
     padding-top: 10vh;
     border-left: 1px solid white;
     transition: 0.5s;
-    background-color: rgb(15, 23, 42);
+    background-color: #4d5975;
   }
   header .navbar ul:hover {
     right: 0px;
@@ -101,14 +112,6 @@ header .navbar .menu-hamburguesa {
 /*-----------------------------------------------------------------------
 - Home
 -----------------------------------------------------------------------*/
-.home-banner {
-  display: flex;
-  flex-flow: column wrap;
-  height: 100vh;
-  width: 100%;
-  justify-content: center;
-  margin: 0 1rem;
-}
 .home-banner h1 {
   font-size: 5rem;
   color: #e4ece4;
@@ -153,6 +156,7 @@ header .navbar .menu-hamburguesa {
   height: 2rem;
   box-shadow: -3px 3px #e4ece4;
   animation: bounce 2s infinite;
+  z-index: 1;
 }
 
 @keyframes bounce {
@@ -167,7 +171,7 @@ header .navbar .menu-hamburguesa {
   }
 }
 /*-----------------------------------------------------------------------
-- Home
+- About Me
 -----------------------------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */

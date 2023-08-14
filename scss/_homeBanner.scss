@@ -3,12 +3,7 @@
 -----------------------------------------------------------------------*/
 
 .home-banner {
-    display: flex;
-    flex-flow: column wrap;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    margin: 0 $margin;
+    @extend .page-sections;
     h1 {
         font-size: 5rem;
         color: $text-color;
@@ -53,6 +48,7 @@
         height: 2rem;
         box-shadow: -3px 3px $text-color;
         animation: bounce 2s infinite;
+        z-index: 1;
     }
 }
 
