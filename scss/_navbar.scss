@@ -19,20 +19,50 @@ header {
             display: flex;
             flex-flow: row wrap;
             align-items: center;
-            margin: 0 $margin;
             gap: 3rem;
+            @media (max-width: 768px) {
+                position: fixed;
+                flex-direction: column;
+                top: 0;
+                width: 200px;
+                height: 100vh;
+                right: -300px;
+                gap: 40px;
+                padding-top: 10vh;
+                border-left: 1px solid white;
+                transition: 0.5s;
+                background-color: $bg-color;
+                &:hover {
+                    right: 0px;
+                }
+            }
             li {
                 text-decoration: none;
                 a {
                     text-decoration: none;
                     color: $text-color;
                     font-size: 1.2rem;
+                    &:hover {
+                        font-weight: 600;
+                    }
                 }
             }
         }
         img {
             height: 60px;
             object-fit: cover;
+        }
+        .menu-hamburguesa {
+            display: none;
+            height: 45px;
+            width: 45px;
+            object-fit: cover;
+            @media (max-width: 768px) {
+                display: block;
+                &:hover + ul {
+                    right: 0px;
+                }
+            }
         }
     }
 }

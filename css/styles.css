@@ -46,8 +46,25 @@ header .navbar ul {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  margin: 0 1rem;
   gap: 3rem;
+}
+@media (max-width: 768px) {
+  header .navbar ul {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    right: -300px;
+    gap: 40px;
+    padding-top: 10vh;
+    border-left: 1px solid white;
+    transition: 0.5s;
+    background-color: rgb(15, 23, 42);
+  }
+  header .navbar ul:hover {
+    right: 0px;
+  }
 }
 header .navbar ul li {
   text-decoration: none;
@@ -57,9 +74,26 @@ header .navbar ul li a {
   color: #e4ece4;
   font-size: 1.2rem;
 }
+header .navbar ul li a:hover {
+  font-weight: 600;
+}
 header .navbar img {
   height: 60px;
   object-fit: cover;
+}
+header .navbar .menu-hamburguesa {
+  display: none;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  header .navbar .menu-hamburguesa {
+    display: block;
+  }
+  header .navbar .menu-hamburguesa:hover + ul {
+    right: 0px;
+  }
 }
 
 /*-----------------------------------------------------------------------
