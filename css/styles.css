@@ -151,7 +151,8 @@ header .navbar .menu-hamburguesa {
 }
 .home-banner .scroll {
   position: absolute;
-  left: 50vw;
+  left: 50%;
+  margin-left: -1rem;
   top: 90dvh;
   width: 2rem;
   height: 2rem;
