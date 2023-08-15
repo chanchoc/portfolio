@@ -13,7 +13,7 @@
 - Generals
 -----------------------------------------------------------------------*/
 body {
-  background-color: rgb(15, 23, 42);
+  background-color: #0f172a;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -24,7 +24,7 @@ main {
   margin: 0 auto;
 }
 
-.page-sections, .about, .home-banner {
+.page-sections, .contact, .projects, .about, .home-banner {
   display: flex;
   flex-flow: column wrap;
   height: 100vh;
@@ -132,10 +132,6 @@ header .navbar .menu-hamburguesa {
   width: 100%;
 }
 .home-banner .links a {
-  display: flex;
-  flex-flow: row wrap;
-  text-decoration: none;
-  align-items: center;
   color: #e4ece4;
   margin-right: 1rem;
   padding: 5px 0px;
@@ -148,6 +144,7 @@ header .navbar .menu-hamburguesa {
 }
 .home-banner .links a img {
   height: 2.6rem;
+  object-fit: cover;
 }
 .home-banner .scroll {
   position: absolute;
@@ -175,5 +172,56 @@ header .navbar .menu-hamburguesa {
 /*-----------------------------------------------------------------------
 - About Me
 -----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+- My Projects
+-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+- Contact Me
+-----------------------------------------------------------------------*/
+.contact {
+  text-align: center;
+}
+.contact h2 {
+  font-size: clamp(3rem, 7vw, 5rem);
+  color: #e4ece4;
+}
+.contact p {
+  font-size: 2rem;
+  font-size: clamp(1rem, 7vw, 2rem);
+  color: #e4ece4;
+}
+.contact .links {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+.contact .links a {
+  color: #e4ece4;
+  margin-right: 1rem;
+  padding: 5px 0px;
+  transition: 0.5s;
+}
+.contact .links a:hover {
+  filter: brightness(0.75);
+  box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+  transform: translate(0px, -0.2rem);
+}
+.contact .links a img {
+  height: 3rem;
+  object-fit: cover;
+}
+.contact .contact-form form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.contact .contact-form form input {
+  width: clamp(250px, 40%, 550px);
+  height: 2rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
