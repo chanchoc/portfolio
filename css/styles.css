@@ -185,6 +185,7 @@ header .navbar .menu-hamburguesa {
 - Contact Me
 -----------------------------------------------------------------------*/
 .contact {
+  align-items: center;
   text-align: center;
 }
 .contact h2 {
@@ -218,28 +219,51 @@ header .navbar .menu-hamburguesa {
   height: 3rem;
   object-fit: cover;
 }
+.contact .contact-form {
+  width: clamp(280px, 80vw, 700px);
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
 .contact .contact-form form {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin-top: 1rem;
-  gap: 1rem;
+  margin: 2rem 0;
+  gap: 2rem;
 }
 .contact .contact-form form div {
   position: relative;
-  width: clamp(250px, 40%, 550px);
-  height: 2rem;
-}
-.contact .contact-form form div input {
-  height: 100%;
   width: 100%;
+  height: auto;
+  padding: 0 2rem;
+}
+.contact .contact-form form div input,
+.contact .contact-form form div textarea {
+  height: 3rem;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+}
+.contact .contact-form form div input[type=submit] {
+  padding: 0;
+  width: 50%;
 }
 .contact .contact-form form div img {
   position: absolute;
-  right: 1%;
-  top: 10%;
+  right: 7%;
+  top: 23%;
   object-fit: cover;
   height: 25px;
+}
+.contact .contact-form form div textarea {
+  height: auto;
+}
+.contact .contact-form form div textarea + img {
+  top: 9%;
 }
 
 /*# sourceMappingURL=styles.css.map */

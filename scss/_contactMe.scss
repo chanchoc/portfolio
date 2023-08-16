@@ -4,6 +4,7 @@
 
 .contact {
     @extend .page-sections;
+    align-items: center;
     text-align: center;
     h2 {
         font-size: clamp(3rem, 7vw, 5rem);
@@ -36,26 +37,49 @@
             }
         }
     }
-    .contact-form form {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
+    .contact-form {
+        width: clamp(280px, 80vw, 700px);
+        background-color: white;
+        border-radius: 5px;
         margin-top: 1rem;
-        gap: 1rem;
-        div {
-            position: relative;
-            width: clamp(250px, 40%, 550px);
-            height: 2rem;
-            input {
-                height: 100%;
+        form {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            margin: 2rem 0;
+            gap: 2rem;
+            div {
+                position: relative;
                 width: 100%;
-            }
-            img {
-                position: absolute;
-                right: 1%;
-                top: 10%;
-                object-fit: cover;
-                height: 25px;
+                height: auto;
+                padding: 0 2rem;
+                input,
+                textarea {
+                    height: 3rem;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 1.1rem;
+                    border: 1px solid grey;
+                    border-radius: 5px;
+                    font-family: "Roboto Mono", monospace;
+                }
+                input[type="submit"] {
+                    padding: 0;
+                    width: 50%;
+                }
+                img {
+                    position: absolute;
+                    right: 7%;
+                    top: 23%;
+                    object-fit: cover;
+                    height: 25px;
+                }
+                textarea {
+                    height: auto;
+                }
+                textarea + img {
+                    top: 9%;
+                }
             }
         }
     }
