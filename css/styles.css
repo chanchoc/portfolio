@@ -90,8 +90,14 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
   font-weight: 600;
 }
-header .navbar img {
+header .navbar a {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+header .navbar a img {
   height: 60px;
+  width: 60px;
   object-fit: cover;
 }
 header .navbar .menu-hamburguesa {
@@ -219,9 +225,21 @@ header .navbar .menu-hamburguesa {
   margin-top: 1rem;
   gap: 1rem;
 }
-.contact .contact-form form input {
+.contact .contact-form form div {
+  position: relative;
   width: clamp(250px, 40%, 550px);
   height: 2rem;
+}
+.contact .contact-form form div input {
+  height: 100%;
+  width: 100%;
+}
+.contact .contact-form form div img {
+  position: absolute;
+  right: 1%;
+  top: 10%;
+  object-fit: cover;
+  height: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -20,7 +20,7 @@
         <header>
             <!-- Inicio NAVBAR -->
             <nav class="navbar">
-                <a href="#"><img src="./multimedia/img/sc-logo.png" alt="Logo Santiago Curat" loading="lazy" /></a>
+                <a href="./index.html#home"><img src="./multimedia/img/sc-logo.png" alt="Logo Santiago Curat" loading="lazy" /></a>
                 <img src="./multimedia/img/menu.png" alt="menu hamburguesa" class="menu-hamburguesa" loading="lazy" />
                 <ul>
                     <li><a href="./index.html#about-me">About Me</a></li>
@@ -32,7 +32,7 @@
         <!-- MAIN -->
         <main>
             <!-- Inicio HOME BANNER -->
-            <section class="home-banner">
+            <section id="home" class="home-banner">
                 <p>Hi, my name is</p>
                 <h1>Santiago Curat.</h1>
                 <h2>I'm a web developer.</h2>
@@ -68,9 +68,17 @@
                 </div>
                 <div class="contact-form">
                     <form>
-                        <input type="text" name="name" placeholder="Name" required class="form-control" />
-                        <input type="text" name="email" placeholder="Email" required class="form-control" />
-                        <input type="submit" value="Send" class="submit btn btn-outline-secondary" />
+                        <div>
+                            <input type="text" name="name" placeholder="Name" required />
+                            <img src="./multimedia/img/user.png" alt="name" loading="lazy" />
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="Email" required />
+                            <img src="./multimedia/img/mail.png" alt="email" loading="lazy" />
+                        </div>
+                        <div>
+                            <input type="submit" value="Send" class="submit btn btn-outline-secondary" />
+                        </div>
                     </form>
                 </div>
             </section>

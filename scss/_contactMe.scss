@@ -42,9 +42,21 @@
         align-items: center;
         margin-top: 1rem;
         gap: 1rem;
-        input {
+        div {
+            position: relative;
             width: clamp(250px, 40%, 550px);
             height: 2rem;
+            input {
+                height: 100%;
+                width: 100%;
+            }
+            img {
+                position: absolute;
+                right: 1%;
+                top: 10%;
+                object-fit: cover;
+                height: 25px;
+            }
         }
     }
 }
