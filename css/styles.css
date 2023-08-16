@@ -229,14 +229,14 @@ header .navbar .menu-hamburguesa {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 2rem 0;
-  gap: 2rem;
+  margin: 1rem 0;
+  gap: 1.2rem;
 }
 .contact .contact-form form div {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 0 2rem;
+  padding: 0 1.2rem;
 }
 .contact .contact-form form div input,
 .contact .contact-form form div textarea {
@@ -248,9 +248,12 @@ header .navbar .menu-hamburguesa {
   border-radius: 5px;
   font-family: "Roboto Mono", monospace;
 }
+.contact .contact-form form div textarea {
+  height: auto;
+}
 .contact .contact-form form div input[type=submit] {
   padding: 0;
-  width: 50%;
+  width: 30%;
 }
 .contact .contact-form form div img {
   position: absolute;
@@ -258,12 +261,6 @@ header .navbar .menu-hamburguesa {
   top: 23%;
   object-fit: cover;
   height: 25px;
-}
-.contact .contact-form form div textarea {
-  height: auto;
-}
-.contact .contact-form form div textarea + img {
-  top: 9%;
 }
 
 /*# sourceMappingURL=styles.css.map */

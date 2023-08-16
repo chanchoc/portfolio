@@ -46,13 +46,13 @@
             display: flex;
             flex-flow: column wrap;
             align-items: center;
-            margin: 2rem 0;
-            gap: 2rem;
+            margin: 1rem 0;
+            gap: 1.2rem;
             div {
                 position: relative;
                 width: 100%;
                 height: auto;
-                padding: 0 2rem;
+                padding: 0 1.2rem;
                 input,
                 textarea {
                     height: 3rem;
@@ -63,9 +63,12 @@
                     border-radius: 5px;
                     font-family: "Roboto Mono", monospace;
                 }
+                textarea {
+                    height: auto;
+                }
                 input[type="submit"] {
                     padding: 0;
-                    width: 50%;
+                    width: 30%;
                 }
                 img {
                     position: absolute;
@@ -73,12 +76,6 @@
                     top: 23%;
                     object-fit: cover;
                     height: 25px;
-                }
-                textarea {
-                    height: auto;
-                }
-                textarea + img {
-                    top: 9%;
                 }
             }
         }
