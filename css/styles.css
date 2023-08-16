@@ -189,12 +189,13 @@ header .navbar .menu-hamburguesa {
   text-align: center;
 }
 .contact h2 {
-  font-size: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(2.9rem, 7vw, 5rem);
   color: #e4ece4;
 }
 .contact p {
+  margin-top: 1rem;
   font-size: 2rem;
-  font-size: clamp(1rem, 7vw, 2rem);
+  font-size: clamp(1rem, 6vw, 2rem);
   color: #e4ece4;
 }
 .contact .links {
@@ -243,7 +244,6 @@ header .navbar .menu-hamburguesa {
   height: 3rem;
   width: 100%;
   padding: 10px;
-  font-size: 1.1rem;
   border: 1px solid grey;
   border-radius: 5px;
   font-family: "Roboto Mono", monospace;
