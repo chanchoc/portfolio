@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     h2 {
-        font-size: clamp(2.9rem, 7vw, 5rem);
+        font-size: clamp(2.8rem, 7vw, 5rem);
         color: $text-color;
     }
     p {
@@ -69,13 +69,6 @@
                 input[type="submit"] {
                     padding: 0;
                     width: 30%;
-                }
-                img {
-                    position: absolute;
-                    right: 7%;
-                    top: 23%;
-                    object-fit: cover;
-                    height: 25px;
                 }
             }
         }
