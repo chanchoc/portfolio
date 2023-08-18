@@ -69,9 +69,6 @@
         justify-content: center;
         align-items: center;
         padding: 0 $padding;
-        @media (max-width: 768px) {
-            align-items: flex-end;
-        }
         img {
             width: clamp(200px, 100%, 300px);
             object-fit: cover;
@@ -91,6 +88,10 @@
         box-shadow: -3px 3px $text-color;
         animation: bounce 2s infinite;
         z-index: 1;
+        @media (max-height: 750px) {
+            animation: none;
+            transform: rotate(-45deg);
+        }
     }
 }
 

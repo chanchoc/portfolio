@@ -190,11 +190,6 @@ header .navbar .menu-hamburguesa {
   align-items: center;
   padding: 0 1rem;
 }
-@media (max-width: 768px) {
-  .home-banner .personal-img {
-    align-items: flex-end;
-  }
-}
 .home-banner .personal-img img {
   width: clamp(200px, 100%, 300px);
   object-fit: cover;
@@ -215,6 +210,12 @@ header .navbar .menu-hamburguesa {
   box-shadow: -3px 3px #e4ece4;
   animation: bounce 2s infinite;
   z-index: 1;
+}
+@media (max-height: 750px) {
+  .home-banner .scroll {
+    animation: none;
+    transform: rotate(-45deg);
+  }
 }
 
 @keyframes bounce {
