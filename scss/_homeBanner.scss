@@ -7,8 +7,8 @@
     grid-template-areas: "presentation personalImg";
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
-    height: calc(100dvh - $nav-height);
-    margin-top: $nav-height;
+    height: 100dvh;
+    padding-top: $nav-height;
     @media (max-width: 768px) {
         grid-template-areas:
             "personalImg"
@@ -48,12 +48,16 @@
             width: 100%;
             @media (max-width: 768px) {
                 justify-content: center;
+                gap: 1rem;
             }
             a {
                 color: $text-color;
                 margin-right: 1rem;
                 padding: 5px 0px;
                 transition: 0.5s;
+                @media (max-width: 768px) {
+                    margin: 0;
+                }
                 &:hover {
                     filter: brightness(0.75);
                     box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);

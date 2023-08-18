@@ -4,15 +4,8 @@
 
 .contact {
     @extend .page-sections;
-    align-items: center;
-    text-align: center;
-    h2 {
-        font-size: clamp(2.8rem, 7vw, 5rem);
-        color: $text-color;
-    }
     p {
         margin-top: 1rem;
-        font-size: 2rem;
         font-size: clamp(1rem, 6vw, 2rem);
         color: $text-color;
     }

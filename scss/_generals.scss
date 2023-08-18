@@ -15,10 +15,16 @@ main {
 .page-sections {
     display: flex;
     flex-flow: column wrap;
-    height: 100dvh;
+    align-items: center;
+    text-align: center;
+    min-height: 100dvh;
     width: 100%;
     justify-content: center;
     padding-left: $padding;
     padding-right: $padding;
     padding-top: $nav-height;
+    h2 {
+        font-size: clamp(2.8rem, 7vw, 5rem);
+        color: $text-color;
+    }
 }

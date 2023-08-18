@@ -1,0 +1,27 @@
+/*-----------------------------------------------------------------------
+- About Card
+-----------------------------------------------------------------------*/
+
+.about-card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+    overflow: visible;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: $bg-img;
+    padding: 1.5rem;
+    img {
+        position: absolute;
+        height: 4rem;
+        object-fit: cover;
+        border: 1px solid grey;
+        background-color: $bg-img;
+        padding: 5px;
+        border-radius: 3px;
+        top: -40px;
+    }
+}
