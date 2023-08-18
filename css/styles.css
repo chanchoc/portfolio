@@ -202,7 +202,7 @@ header .navbar .menu-hamburguesa {
 }
 @media (max-width: 768px) {
   .home-banner .personal-img img {
-    width: 200px;
+    width: 150px;
   }
 }
 .home-banner .scroll {
