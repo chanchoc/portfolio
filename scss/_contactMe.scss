@@ -19,13 +19,12 @@
     .links {
         display: flex;
         flex-flow: row wrap;
-        margin-top: 1rem;
         justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
         width: 100%;
         a {
             color: $text-color;
-            margin-right: 1rem;
-            padding: 5px 0px;
             transition: 0.5s;
             &:hover {
                 filter: brightness(0.75);
@@ -43,33 +42,31 @@
         background-color: white;
         border-radius: 5px;
         margin-top: 1rem;
+        background-color: #e6e6e6;
         form {
             display: flex;
             flex-flow: column wrap;
             align-items: center;
             margin: 1rem 0;
-            gap: 1.2rem;
-            div {
-                position: relative;
+            gap: 1rem;
+            width: 100%;
+            height: auto;
+            padding: 0 1rem;
+            input,
+            textarea {
+                height: 3rem;
                 width: 100%;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 5px;
+                font-family: "Roboto Mono", monospace;
+            }
+            textarea {
                 height: auto;
-                padding: 0 1.2rem;
-                input,
-                textarea {
-                    height: 3rem;
-                    width: 100%;
-                    padding: 10px;
-                    border: 1px solid grey;
-                    border-radius: 5px;
-                    font-family: "Roboto Mono", monospace;
-                }
-                textarea {
-                    height: auto;
-                }
-                input[type="submit"] {
-                    padding: 0;
-                    width: 30%;
-                }
+            }
+            input[type="submit"] {
+                padding: 0;
+                width: 30%;
             }
         }
     }

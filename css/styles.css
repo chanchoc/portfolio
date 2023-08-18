@@ -201,14 +201,13 @@ header .navbar .menu-hamburguesa {
 .contact .links {
   display: flex;
   flex-flow: row wrap;
-  margin-top: 1rem;
   justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
   width: 100%;
 }
 .contact .links a {
   color: #e4ece4;
-  margin-right: 1rem;
-  padding: 5px 0px;
   transition: 0.5s;
 }
 .contact .links a:hover {
@@ -225,22 +224,20 @@ header .navbar .menu-hamburguesa {
   background-color: white;
   border-radius: 5px;
   margin-top: 1rem;
+  background-color: #e6e6e6;
 }
 .contact .contact-form form {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   margin: 1rem 0;
-  gap: 1.2rem;
-}
-.contact .contact-form form div {
-  position: relative;
+  gap: 1rem;
   width: 100%;
   height: auto;
-  padding: 0 1.2rem;
+  padding: 0 1rem;
 }
-.contact .contact-form form div input,
-.contact .contact-form form div textarea {
+.contact .contact-form form input,
+.contact .contact-form form textarea {
   height: 3rem;
   width: 100%;
   padding: 10px;
@@ -248,10 +245,10 @@ header .navbar .menu-hamburguesa {
   border-radius: 5px;
   font-family: "Roboto Mono", monospace;
 }
-.contact .contact-form form div textarea {
+.contact .contact-form form textarea {
   height: auto;
 }
-.contact .contact-form form div input[type=submit] {
+.contact .contact-form form input[type=submit] {
   padding: 0;
   width: 30%;
 }
