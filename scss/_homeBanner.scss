@@ -3,38 +3,79 @@
 -----------------------------------------------------------------------*/
 
 .home-banner {
-    @extend .page-sections;
-    h1 {
-        font-size: clamp(3rem, 7vw, 5rem);
-        color: $text-color;
+    display: grid;
+    grid-template-areas: "presentation personalImg";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    height: 100dvh;
+    @media (max-width: 768px) {
+        grid-template-areas:
+            "personalImg"
+            "presentation";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
     }
-    h2 {
-        font-size: clamp(2rem, 7vw, 3rem);
-        color: $text-color;
-    }
-    p {
-        font-size: 2rem;
-        font-size: clamp(1rem, 7vw, 2rem);
-        color: $text-color;
-    }
-    .links {
-        display: flex;
-        flex-flow: row wrap;
-        margin-top: 1rem;
-        width: 100%;
-        a {
+    .presentation {
+        grid-area: presentation;
+        @extend .page-sections;
+        @media (max-width: 768px) {
+            height: auto;
+            align-items: center;
+            text-align: center;
+        }
+        h1 {
+            font-size: clamp(3rem, 7vw, 5rem);
             color: $text-color;
-            margin-right: 1rem;
-            padding: 5px 0px;
-            transition: 0.5s;
-            &:hover {
-                filter: brightness(0.75);
-                box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
-                transform: translate(0px, -0.2rem);
+        }
+        h2 {
+            font-size: clamp(2rem, 7vw, 3rem);
+            color: $text-color;
+        }
+        p {
+            font-size: 2rem;
+            font-size: clamp(1rem, 7vw, 2rem);
+            color: $text-color;
+        }
+        .links {
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 1rem;
+            width: 100%;
+            @media (max-width: 768px) {
+                justify-content: center;
             }
-            img {
-                height: 2.6rem;
-                object-fit: cover;
+            a {
+                color: $text-color;
+                margin-right: 1rem;
+                padding: 5px 0px;
+                transition: 0.5s;
+                &:hover {
+                    filter: brightness(0.75);
+                    box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
+                    transform: translate(0px, -0.2rem);
+                }
+                img {
+                    height: 2.6rem;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .personal-img {
+        grid-area: personalImg;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 768px) {
+            align-items: flex-end;
+        }
+        img {
+            width: clamp(200px, 100%, 300px);
+            object-fit: cover;
+            border-radius: 50%;
+            @media (max-width: 768px) {
+                width: 200px;
             }
         }
     }

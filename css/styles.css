@@ -24,10 +24,10 @@ main {
   margin: 0 auto;
 }
 
-.page-sections, .contact, .projects, .about, .home-banner {
+.page-sections, .contact, .projects, .about, .home-banner .presentation {
   display: flex;
   flex-flow: column wrap;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   justify-content: center;
   padding: 0 1rem;
@@ -118,39 +118,90 @@ header .navbar .menu-hamburguesa {
 /*-----------------------------------------------------------------------
 - Home
 -----------------------------------------------------------------------*/
-.home-banner h1 {
+.home-banner {
+  display: grid;
+  grid-template-areas: "presentation personalImg";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  height: 100dvh;
+}
+@media (max-width: 768px) {
+  .home-banner {
+    grid-template-areas: "personalImg" "presentation";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+}
+.home-banner .presentation {
+  grid-area: presentation;
+}
+@media (max-width: 768px) {
+  .home-banner .presentation {
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+}
+.home-banner .presentation h1 {
   font-size: clamp(3rem, 7vw, 5rem);
   color: #e4ece4;
 }
-.home-banner h2 {
+.home-banner .presentation h2 {
   font-size: clamp(2rem, 7vw, 3rem);
   color: #e4ece4;
 }
-.home-banner p {
+.home-banner .presentation p {
   font-size: 2rem;
   font-size: clamp(1rem, 7vw, 2rem);
   color: #e4ece4;
 }
-.home-banner .links {
+.home-banner .presentation .links {
   display: flex;
   flex-flow: row wrap;
   margin-top: 1rem;
   width: 100%;
 }
-.home-banner .links a {
+@media (max-width: 768px) {
+  .home-banner .presentation .links {
+    justify-content: center;
+  }
+}
+.home-banner .presentation .links a {
   color: #e4ece4;
   margin-right: 1rem;
   padding: 5px 0px;
   transition: 0.5s;
 }
-.home-banner .links a:hover {
+.home-banner .presentation .links a:hover {
   filter: brightness(0.75);
   box-shadow: 0 8px 12px 0 rgba(34, 60, 80, 0.16);
   transform: translate(0px, -0.2rem);
 }
-.home-banner .links a img {
+.home-banner .presentation .links a img {
   height: 2.6rem;
   object-fit: cover;
+}
+.home-banner .personal-img {
+  grid-area: personalImg;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .home-banner .personal-img {
+    align-items: flex-end;
+  }
+}
+.home-banner .personal-img img {
+  width: clamp(200px, 100%, 300px);
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .home-banner .personal-img img {
+    width: 200px;
+  }
 }
 .home-banner .scroll {
   position: absolute;
