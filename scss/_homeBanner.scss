@@ -7,7 +7,8 @@
     grid-template-areas: "presentation personalImg";
     grid-template-columns: 3fr 1fr;
     grid-template-rows: auto auto;
-    height: 100dvh;
+    height: calc(100dvh - $nav-height);
+    margin-top: $nav-height;
     @media (max-width: 768px) {
         grid-template-areas:
             "personalImg"
@@ -67,6 +68,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding: 0 $padding;
         @media (max-width: 768px) {
             align-items: flex-end;
         }
