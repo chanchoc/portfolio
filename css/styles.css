@@ -34,7 +34,7 @@ main {
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 .page-sections h2, .contact h2, .projects h2, .about h2 {
   font-size: clamp(2.8rem, 7vw, 5rem);
@@ -255,7 +255,7 @@ header .navbar .menu-hamburguesa {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 300px;
   position: relative;
   overflow: visible;
@@ -272,7 +272,7 @@ header .navbar .menu-hamburguesa {
   background-color: #d8d9d8;
   padding: 5px;
   border-radius: 3px;
-  top: -40px;
+  top: -45px;
 }
 
 /*-----------------------------------------------------------------------
@@ -282,10 +282,39 @@ header .navbar .menu-hamburguesa {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  gap: 3rem;
+  gap: 4rem;
   width: 100%;
   margin-top: 3.5rem;
   overflow: visible;
+}
+.about .tech {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  width: clamp(288px, 92%, 100%);
+  gap: 2rem;
+  margin-top: 4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #d8d9d8;
+  padding: 1.5rem;
+  overflow: visible;
+}
+.about .tech img {
+  height: 60px;
+  object-fit: cover;
+}
+.about .tech .tech-header {
+  position: absolute;
+  height: 4rem;
+  object-fit: cover;
+  border: 1px solid grey;
+  background-color: #d8d9d8;
+  padding: 5px;
+  border-radius: 3px;
+  top: -45px;
 }
 
 /*-----------------------------------------------------------------------

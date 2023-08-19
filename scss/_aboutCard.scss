@@ -6,7 +6,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 300px;
     position: relative;
     overflow: visible;
@@ -22,6 +22,6 @@
         background-color: $bg-img;
         padding: 5px;
         border-radius: 3px;
-        top: -40px;
+        top: -45px;
     }
 }

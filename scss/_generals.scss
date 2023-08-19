@@ -22,7 +22,7 @@ main {
     justify-content: center;
     padding-left: $padding;
     padding-right: $padding;
-    padding-top: $nav-height;
+    padding-top: $nav-height + 20px;
     h2 {
         font-size: clamp(2.8rem, 7vw, 5rem);
         color: $text-color;

@@ -8,9 +8,38 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
-        gap: 3rem;
+        gap: 4rem;
         width: 100%;
         margin-top: 3.5rem;
         overflow: visible;
+    }
+    .tech {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        width: clamp(288px, 92%, 100%);
+        gap: 2rem;
+        margin-top: 4rem;
+        border: 1px solid grey;
+        border-radius: 5px;
+        background-color: $bg-img;
+        padding: 1.5rem;
+        overflow: visible;
+        img {
+            height: 60px;
+            object-fit: cover;
+        }
+        .tech-header {
+            position: absolute;
+            height: 4rem;
+            object-fit: cover;
+            border: 1px solid grey;
+            background-color: $bg-img;
+            padding: 5px;
+            border-radius: 3px;
+            top: -45px;
+        }
     }
 }
