@@ -34,7 +34,7 @@ main {
   justify-content: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .page-sections h2, .contact h2, .projects h2, .about h2 {
   font-size: clamp(2.8rem, 7vw, 5rem);
