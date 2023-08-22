@@ -31,9 +31,9 @@ header {
                 width: 200px;
                 height: 100vh;
                 right: -300px;
+                box-shadow: 1px 1px 4px 1px $text-color;
                 gap: 40px;
                 padding-top: 10vh;
-                border-left: 1px solid white;
                 transition: 0.5s;
                 background-color: $bg-color-nav;
                 &:hover {

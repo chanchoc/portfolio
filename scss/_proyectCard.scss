@@ -1,0 +1,65 @@
+/*-----------------------------------------------------------------------
+- Proyect Card
+-----------------------------------------------------------------------*/
+
+.project-card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: $bg-img;
+    .project-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    h3 {
+        width: 100%;
+        margin-top: 1.5rem;
+        font-weight: bold;
+        padding: 0 1.5rem;
+    }
+    p {
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+        color: black;
+    }
+    .project-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0 1.5rem;
+        button {
+            width: 45%;
+            height: 2.5rem;
+            border: 2px solid $bg-color-nav;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            background-color: $bg-color-nav;
+            color: $text-color;
+            &:hover {
+                background-color: $text-color;
+                color: $bg-color-nav;
+                font-size: bold;
+            }
+        }
+    }
+    .used-tech {
+        display: flex;
+        flex-direction: row;
+        gap: 0.7rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        background-color: grey;
+        img {
+            height: 1.563rem;
+            object-fit: cover;
+        }
+    }
+}

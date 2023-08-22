@@ -77,9 +77,9 @@ header .navbar ul {
     width: 200px;
     height: 100vh;
     right: -300px;
+    box-shadow: 1px 1px 4px 1px #e4ece4;
     gap: 40px;
     padding-top: 10vh;
-    border-left: 1px solid white;
     transition: 0.5s;
     background-color: #4d5975;
   }
@@ -198,7 +198,7 @@ header .navbar .menu-hamburguesa {
   transform: translate(0px, -0.2rem);
 }
 .home-banner .presentation .links a img {
-  height: 2.6rem;
+  height: 3rem;
   object-fit: cover;
 }
 .home-banner .personal-img {
@@ -256,6 +256,7 @@ header .navbar .menu-hamburguesa {
   flex-flow: column wrap;
   align-items: center;
   justify-content: start;
+  text-align: left;
   width: 300px;
   position: relative;
   overflow: visible;
@@ -284,7 +285,7 @@ header .navbar .menu-hamburguesa {
   justify-content: space-around;
   gap: 4rem;
   width: 100%;
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
   overflow: visible;
 }
 .about .tech {
@@ -293,7 +294,7 @@ header .navbar .menu-hamburguesa {
   align-items: center;
   justify-content: space-around;
   position: relative;
-  width: clamp(288px, 92%, 100%);
+  width: 100%;
   gap: 2rem;
   margin-top: 4rem;
   border: 1px solid grey;
@@ -318,11 +319,100 @@ header .navbar .menu-hamburguesa {
 }
 
 /*-----------------------------------------------------------------------
+- Proyect Card
+-----------------------------------------------------------------------*/
+.project-card {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: start;
+  text-align: left;
+  width: 300px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #d8d9d8;
+}
+.project-card .project-img {
+  width: 100%;
+  object-fit: cover;
+}
+.project-card h3 {
+  width: 100%;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  padding: 0 1.5rem;
+}
+.project-card p {
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+  color: black;
+}
+.project-card .project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+.project-card .project-links button {
+  width: 45%;
+  height: 2.5rem;
+  border: 2px solid #4d5975;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  background-color: #4d5975;
+  color: #e4ece4;
+}
+.project-card .project-links button:hover {
+  background-color: #e4ece4;
+  color: #4d5975;
+  font-size: bold;
+}
+.project-card .used-tech {
+  display: flex;
+  flex-direction: row;
+  gap: 0.7rem;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: grey;
+}
+.project-card .used-tech img {
+  height: 1.563rem;
+  object-fit: cover;
+}
+
+/*-----------------------------------------------------------------------
 - My Projects
 -----------------------------------------------------------------------*/
+.projects .project-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 4.5rem;
+}
+.projects .project-extra {
+  margin-top: 3rem;
+  color: #e4ece4;
+}
+.projects .project-extra a {
+  text-decoration: none;
+  color: #e4ece4;
+  font-weight: bold;
+}
+.projects .project-extra a:hover {
+  color: rgb(167, 165, 165);
+}
+
 /*-----------------------------------------------------------------------
 - Contact Me
 -----------------------------------------------------------------------*/
+.contact {
+  padding-bottom: 3rem;
+}
 .contact p {
   margin-top: 1rem;
   font-size: clamp(1rem, 6vw, 2rem);

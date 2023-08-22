@@ -4,6 +4,7 @@
 
 .contact {
     @extend .page-sections;
+    padding-bottom: 3rem;
     p {
         margin-top: 1rem;
         font-size: clamp(1rem, 6vw, 2rem);
